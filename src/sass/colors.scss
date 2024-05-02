@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-bg: #eff1f3;
+    --form-bg: #fff;
+    --font-color: #000;
+    --btn-payment: #46c900;
+    --bg-alert: #e55858;
+    --font-alet: #fff;
+    --font-color-autor: #3e3e41;
+    --btn-blue: #236591;
+    --purple: #9207ac;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: #28282a;
+    --form-bg: #000;
+    --font-alet: #fff;
+    --font-color: #fff;
+    --btn-payment: #2d7e00;
+    --bg-alert: #9c3939;
+    --font-color-autor: #cbced1;
+    --btn-blue: #7ec8e3;
+    --purple: #ae35d1;
+  }
+}
