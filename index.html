@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- checkoutblock -->
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +9,103 @@
 </head>
 
 <body>
+  <header class="banner">
+    <p class="banner__alert"><span class="alert-time">5:00</span><img src="" alt="relogio" class="alert-clock-icon">
+      Aproveite antes que acabe!</p>
+  </header>
 
+  <main class="container">
+    <article class="container__container-content">
+      <div class="container-content__info-curso">
+        <img src="" alt="" class="info-curso__logo-curso">
+        <h1 class="info-curso__titlie-curso">CANVA PARA TODOS</h1>
+        <p class="info-curso__altor-curso">ARTELIZE DIGITAL</p>
+      </div>
+
+      <div class="container-content__container-form">
+        <form action="" class="container-form__form">
+          <fieldset class="form__campo">
+            <label for="name" class="campo__label">Nome</label>
+            <input type="text" name="name" id="name" class="campo__input" required>
+            <span class="mensage-error"></span>
+          </fieldset>
+          <fieldset class="form__campo">
+            <label for="email" class="campo__label">Email</label>
+            <input type="text" name="email" id="email" class="campo__input" required>
+            <span class="mensage-error"></span>
+
+          </fieldset>
+          <fieldset class="form__campo">
+            <label for="confirm-email" class="campo__label">Confirme seu email</label>
+            <input type="text" name="confirm-email" id="confirm-email" class="campo__input" required>
+            <span class="mensage-error"></span>
+
+          </fieldset>
+        </form>
+
+        <button class="container-form__btn-pix-select">Pix</button>
+        <div class="container-form__more-info">
+          <p class="more-info__titlie">Informações sobre o pagamento via pix: </p>
+          <ul class="more-info__list-info">
+            <li class="list-info__info"> Valor à vista: R$ 7,00</li>
+            <li class="list-info__info">Liberação imediata! </li>
+            <li class="list-info__info">É simples, só usar o aplicativo de seu banco para pagar PIX. </li>
+            <li class="list-info__info">Super seguro. O pagamento PIX foi desenvolvido pelo Banco Central para facilitar
+              pagamentos.</li>
+          </ul>
+        </div>
+
+        <button class="container-form__btn-submit-payment">PAGAR AGORA</button>
+      </div>
+    </article>
+
+    <section class="container__more-descriptions">
+      <h2 class="more-description__title">Saiba mais</h2>
+      <ul class="more-description__list-description">
+        <li class="list-description__item">
+          <img src="" alt="">
+          <div class="item__wrapper">
+            <p class="wrapper__primary-text">Entregue via E-mail.</p>
+            <p class="wrapper__second-text">Acesso ao produto entregue por e-mail.</p>
+          </div>
+        </li>
+
+        <li class="list-description__item">
+          <img src="" alt="">
+          <div class="item__wrapper">
+            <p class="wrapper__primary-text">Entregue via E-mail.</p>
+            <p class="wrapper__second-text">Acesso ao produto entregue por e-mail.</p>
+          </div>
+        </li>
+
+        <li class="list-description__item">
+          <img src="" alt="">
+          <div class="item__wrapper">
+            <p class="wrapper__primary-text">Entregue via E-mail.</p>
+            <p class="wrapper__second-text">Acesso ao produto entregue por e-mail.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container__payment">
+      <h2 class="payment__tittle">Pedido gerado! Finalize o pagamento</h2>
+
+      <ul class="payment__instuction-payment">
+        <li class="instuction-payment__instuction">1. Abra o app do seu banco e entre na opção Pix.</li>
+        <li class="instuction-payment__instuction">2. Escolha a opção Pagar / Pix copia e cola.</li>
+        <li class="instuction-payment__instuction">3. Escaneie o QR code. Se preferir, copie e cole o código.</li>
+        <li class="instuction-payment__instuction">4. Depois, confirme o pagamento.</li>
+      </ul>
+      <span class="alert">A aprovação leva no máximo 2 minutos. </span>
+
+      <div class="payment__qr-code"></div>
+      <button class="payment__copy-code">COPIAR CODIGO PIX</button>
+
+      <p class="payment__value">TOTAL: R$ 7,00</p>
+    </section>
+
+  </main>
 </body>
 
 </html>
