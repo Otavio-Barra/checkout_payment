@@ -27,16 +27,7 @@ const requestOptions = {
   redirect: "follow",
 };
 
-async function getData() {
-  const response = await fetch(
-    "https://api.mercadopago.com/v1/payments",
-    requestOptions
-  );
-  const data = await response.json();
-  console.log(data);
-}
-getData();
-
-// .then((response) => response.json())
-// .then((result) => console.log(result))
-// .catch((error) => console.error(error));
+fetch("https://api.mercadopago.com/v1/payments", requestOptions)
+  .then((response) => response.json())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
