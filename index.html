@@ -11,44 +11,36 @@
 </head>
 
 <body>
-  <header class="wrapper">
+  <!-- <header class="wrapper">
     <p class="wrapper__alert"><span class="alert-time">5:00 </span><i class="fa-regular fa-clock"></i> Aproveite antes
       que acabe!</p>
-  </header>
+  </header> -->
 
   <main class="container">
     <article class="container__container-content">
       <img src="./src/imgs/banner.png" alt="banner" class="container-content__banner">
-      <!-- <div class="container-content__info-curso">
-        <img src="./src/imgs/O-MELHOR-CURSO-DE-INGLES-DO-MERCADO-ATUALMENTE-1_263928ec8b0a45888902a61611b1d9cd.jpeg"
-          alt="" class="info-curso__logo-curso">
-        <div class="info-curso__wrapper-autor">
-          <h1 class="info-curso__titlie-curso">CANVA PARA TODOS</h1>
-          <p class="info-curso__autor-curso">ARTELIZE DIGITAL</p>
-        </div>
 
-      </div> -->
 
       <div class="container-content__container-form">
         <form action="" class="container-form__form">
 
           <label for="name" class="campo__label">
-            <span>Nome</span>
-            <input type="text" name="name" id="name" class="campo__input" required>
+            <span class="name-input">Nome</span>
+            <input type="text" name="name" id="name" class="campo__input" minlength="4" required>
           </label>
-          <span class="mensage-error"></span>
 
 
           <label for="email" class="campo__label">
-            <span>Email</span>
-            <input type="text" name="email" id="email" class="campo__input" required>
+            <span class="name-input">Email</span>
+            <input type="email" name="email" id="email" class="campo__input" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              required>
           </label>
-          <span class="mensage-error"></span>
 
 
-          <label for="confirm-email" class="campo__label">
-            <span>Confirme seu Email</span>
-            <input type="email" name="confirm-email" id="confirm-email" class="campo__input" required>
+          <label for="confirmEmail" class="campo__label">
+            <span class="name-input">Confirme seu Email</span>
+            <input type="email" name="confirmEmail" id="confirmEmail" class="campo__input"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
           </label>
           <span class="mensage-error"></span>
 
@@ -69,7 +61,7 @@
           </ul>
         </div>
 
-        <button class="container-form__btn-submit-payment">PAGAR AGORA</button>
+        <button class="container-form__btn-submit-payment ">PAGAR AGORA</button>
       </div>
     </article>
 
@@ -101,22 +93,22 @@
       </ul>
     </section>
 
-    <!-- <section class="container__payment">
+    <section class="container__payment oculto">
       <h2 class="payment__tittle">Pedido gerado! Finalize o pagamento</h2>
 
       <ul class="payment__instuction-payment">
-        <li class="instuction-payment__instuction">1. Abra o app do seu banco e entre na opção Pix.</li>
-        <li class="instuction-payment__instuction">2. Escolha a opção Pagar / Pix copia e cola.</li>
-        <li class="instuction-payment__instuction">3. Escaneie o QR code. Se preferir, copie e cole o código.</li>
-        <li class="instuction-payment__instuction">4. Depois, confirme o pagamento.</li>
+        <li class="instuction-payment__instuction">Abra o app do seu banco e entre na opção Pix.</li>
+        <li class="instuction-payment__instuction">Escolha a opção Pagar / Pix copia e cola.</li>
+        <li class="instuction-payment__instuction">Escaneie o QR code. Se preferir, copie e cole o código.</li>
+        <li class="instuction-payment__instuction">Depois, confirme o pagamento.</li>
       </ul>
-      <span class="alert">A aprovação leva no máximo 2 minutos. </span>
+      <span class="alert">A aprovação leva no máximo 2 minutos.</span>
 
       <div class="payment__qr-code"></div>
-      <button class="payment__copy-code">COPIAR CODIGO PIX</button>
+      <button class="payment__copy-code"><i class="fa-solid fa-copy"></i> COPIAR CODIGO PIX</button>
 
       <p class="payment__value">TOTAL: R$ 7,00</p>
-    </section> -->
+    </section>
 
   </main>
 </body>
