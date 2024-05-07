@@ -1,3 +1,4 @@
-const token = "APP_USR-e92f0107-aab3-4979-843c-c8ceaaad01dc";
+const token =
+  "TEST-7023105234020069-050705-544bc24783055788601e10d9bf4583ba-190179622";
 
 export default token;
