@@ -3,7 +3,7 @@ const btnPayment = document.querySelector(
   ".container-form__btn-submit-payment"
 );
 const divMensage = document.querySelector(".mensage-error");
-let email = document.getElementById("email");
+const email = document.getElementById("email");
 const paymentContainer = document.querySelector(".container__payment");
 const articleForm = document.querySelector(".container__container-content");
 const moreInfo = document.querySelector(".container__more-descriptions");
@@ -134,3 +134,9 @@ function validaEmail(input) {
 */
 
 ///
+
+//   alertTime.innerHTML = `${timeFormate}`;
+// }
+
+// setInterval(contagem, 1000);
+// >>>>>>> parent of cb70acd (teste de validacao dos inputs)
